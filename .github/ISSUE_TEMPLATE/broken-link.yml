@@ -1,0 +1,33 @@
+name: Broken link
+description: Report an invalid, dead, or redirected link in the repository.
+title: "[Broken Link] "
+labels:
+  - broken-link
+  - triage
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected file or section
+      placeholder: e.g. resources/agent.md
+    validations:
+      required: true
+  - type: input
+    id: broken_url
+    attributes:
+      label: Broken URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong
+      description: Tell us whether the link is dead, redirected, paid-only, or points to the wrong content.
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement URL
+      placeholder: https://... (optional)

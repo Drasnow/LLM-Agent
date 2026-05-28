@@ -1,0 +1,35 @@
+name: Content fix
+description: Report a wrong category, outdated summary, or other content issue.
+title: "[Content Fix] "
+labels:
+  - content
+  - triage
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected file or section
+      placeholder: e.g. README.md or resources/rag.md
+    validations:
+      required: true
+  - type: textarea
+    id: current_problem
+    attributes:
+      label: Current problem
+      description: What is incorrect, outdated, or misleading?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_fix
+    attributes:
+      label: Suggested fix
+      description: What should be changed?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked that this is not already covered by another issue
+          required: true
