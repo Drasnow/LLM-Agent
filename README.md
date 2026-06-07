@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/cover.png" alt="LLM / Agent 学习资源导航封面" width="100%" />
-</p>
-
 # LLM / Agent 学习资源导航
 
 这是一份面向中文开发者的 LLM / RAG / Agent 学习教程清单，目标很简单：帮你更快找到值得学、适合自己当前阶段的资料。
